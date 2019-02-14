@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<food_recipes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./schemas/Recipes_Schema.xsd">
+    <recipe>
+        <recipe_number>0014</recipe_number>
+        <recipe_name>French Onion Soup</recipe_name>
+        <recipe_typical_use> soup </recipe_typical_use>
+        <recipe_ingredients>
+            <ingredients> 1 tb butter </ingredients>
+            <ingredients> 3⁄4 cup sliced onions </ingredients>
+            <ingredients> 1⁄2 tsp sugar </ingredients>
+            <ingredients> 1 tb flour </ingredients>
+            <ingredients> 4 cups of consomme </ingredients>
+            <ingredients> 4 slices of French bread </ingredients>
+            <ingredients> 1⁄4 lb grated Parmesan cheese </ingredients>
+            <ingredients> salt </ingredients>
+            <ingredients> pepper </ingredients>
+        </recipe_ingredients>
+        <recipe_steps>
+            <steps>Melt butter in a large pan</steps>
+            <steps>Add onions</steps>
+            <steps>Add sugar flour, stir and cook 1 minute</steps>
+            <steps>Add consomme</steps>
+            <steps>Season to taste with salt and pepper</steps>
+            <steps>Simmer for 30 minutes</steps>
+            <steps>Add water to maintain 4 cups volume</steps>
+            <steps>Let mellow 1 day</steps>
+            <steps>Toast French bread</steps>
+            <steps>Put a slice of bread into each of 4 soup bowls</steps>
+            <steps>Pour soup over toast</steps>
+            <steps>Cover soup with Parmesan cheese</steps>
+            <steps>Bake in 400 degree oven until cheese is dark brown</steps>
+            <steps>Serves 4 people</steps>
+        </recipe_steps>
+    </recipe>
+    <recipe>
+        <recipe_number>0015</recipe_number>
+        <recipe_name>Chicken Sandwiches with Zang</recipe_name>
+        <recipe_typical_use> main</recipe_typical_use>
+        <recipe_ingredients>
+            <ingredients> 4 skinless, boneless chicken breast halves  </ingredients>
+            <ingredients> 3 tbs Italian seasoning </ingredients>
+            <ingredients> 3 tbs grill seasoning (such as Montreal Steak Seasoning) </ingredients>
+            <ingredients> 1/2 cup barbeque sauce (such as Big Moe's(R)) </ingredients>
+            <ingredients> 1 tsp butter</ingredients>
+            <ingredients> 1 onion, thinly sliced </ingredients>
+            <ingredients> 1 green bell pepper, sliced </ingredients>
+            <ingredients> 4 mushrooms, sliced </ingredients>
+            <ingredients> 4 hamburger buns</ingredients>
+            <ingredients> 4 slices Swiss cheese </ingredients>
+        </recipe_ingredients>
+        <recipe_steps>
+            <steps>Preheat an outdoor or indoor grill for low heat, and lightly oil the grate.</steps>
+            <steps>Sprinkle the chicken breasts generously on all sides with the Italian and grill seasonings. Slowly cook on the preheated grill, turning every 10 minutes</steps>
+            <steps>brush the chicken with the barbeque sauce each time you turn it. Cook until the chicken is no longer pink in the center and the juices run clear</steps>
+            <steps>Once done, an instant-read thermometer inserted into the center should read at least 165 degrees F (74 degrees C)</steps>
+            <steps>While the chicken is cooking, melt the butter in a skillet over medium-low heat </steps>
+            <steps>Cook the onions, bell peppers, and mushrooms in the butter, stirring frequently until the vegetables are tender</steps>
+            <steps>To make the sandwiches, place a chicken breast on each hamburger bun half</steps>
+            <steps>Spoon the pepper and onion mixture overtop, and top with a slice of Swiss cheese</steps>
+            <steps>Cover with the hamburger bun tops</steps>
+        </recipe_steps>
+    </recipe>
+    <recipe>
+        <recipe_number>0016</recipe_number>
+        <recipe_name>Roasted Yam and Kale Salad</recipe_name>
+        <recipe_typical_use> salad </recipe_typical_use>
+        <recipe_ingredients>
+            <ingredients> 2 jewel yams</ingredients>
+            <ingredients> 3 tsp olive oil</ingredients>
+            <ingredients> Salt</ingredients>
+            <ingredients> Black Pepper</ingredients>
+            <ingredients> 1 onion sliced</ingredients>
+            <ingredients> 4 slices of French bread </ingredients>
+            <ingredients> 3 cloves garlic, minced </ingredients>
+            <ingredients> 1 bunch kale</ingredients>
+            <ingredients> 2 tsb of red wine vinegar </ingredients>
+            <ingredients> 1 tsp chopped fresh thyme</ingredients>
+        </recipe_ingredients>
+        <recipe_steps>
+            <steps>Preheat an oven to 400 degrees F (200 degrees C)</steps>
+            <steps>cut yams into 1-inch cubes </steps>
+            <steps>Toss the yams with 2 tablespoons of olive oil in a bowl</steps>
+            <steps>Season to taste with salt and pepper, and arrange evenly onto a baking sheet.</steps>
+            <steps>Bake in the preheated oven until the yams are tender, 20 to 25 minutes. Cool to room temperature in the refrigerator</steps>
+            <steps>Meanwhile, heat the remaining 1 tablespoon of olive oil in a large skillet over medium heat</steps>
+            <steps>Cook and stir the onion and garlic until the onion has caramelized to a golden brown, about 15 minutes</steps>
+            <steps>Stir in the kale, cooking until wilted and tender</steps>
+            <steps>Transfer the kale mixture to a bowl, and cool to room temperature in the refrigerator</steps>
+            <steps>Once all the ingredients have cooled, combine the yams, kale, red wine vinegar, and fresh thyme in a bowl</steps>
+            <steps>Season to taste with salt and pepper, and gently stir to combine</steps>
+        </recipe_steps>
+    </recipe>
+</food_recipes>

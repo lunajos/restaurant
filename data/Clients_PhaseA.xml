@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<client_information xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./schemas/Clients_Schema.xsd">
+    <client>
+        <client_number> 090012 </client_number>
+        <client_name>
+            <client_name_family> de Quillettes </client_name_family>
+            <client_name_given> Frouke </client_name_given>
+        </client_name>
+        <client_telephone_number> +1 570 675 9277 </client_telephone_number>
+        <client_fax_number> +1 570 675 7712 </client_fax_number>
+        <client_address>
+            <client_address_street> Old Route 115 </client_address_street>
+            <client_address_city> Lehman </client_address_city>
+            <client_address_state> PA </client_address_state>
+            <client_address_postal_code> 18627 </client_address_postal_code>
+        </client_address>
+        <client_status> first-time </client_status>
+    </client>
+
+    <client>
+        <client_number> 090013 </client_number>
+        <client_name>
+            <client_name_family> Luna </client_name_family>
+            <client_name_given> Jose </client_name_given>
+        </client_name>
+        <client_telephone_number> +1 570 235 7070 </client_telephone_number>
+        <client_fax_number> +1 570 235 8118 </client_fax_number>
+        <client_address>
+            <client_address_street> 113 Hilldale Avenue </client_address_street>
+            <client_address_city> Plains </client_address_city>
+            <client_address_state> PA </client_address_state>
+            <client_address_postal_code> 18705 </client_address_postal_code>
+        </client_address>
+        <client_status> inactive </client_status>
+    </client>
+
+    <client>
+        <client_number> 090014 </client_number>
+        <client_name>
+            <client_name_family> Snyder </client_name_family>
+            <client_name_given> John </client_name_given>
+        </client_name>
+        <client_telephone_number> +1 570 823 7894</client_telephone_number>
+        <client_fax_number> +1 570 823 8672 </client_fax_number>
+        <client_address>
+            <client_address_street> 25 Denise Court </client_address_street>
+            <client_address_city> Wilkes Barre </client_address_city>
+            <client_address_state> PA </client_address_state>
+            <client_address_postal_code> 18702 </client_address_postal_code>
+        </client_address>
+        <client_status> repeat </client_status>
+    </client>
+
+    <client>
+        <client_number> 090015 </client_number>
+        <client_name>
+            <client_name_family> Johnson </client_name_family>
+            <client_name_given> Thomas </client_name_given>
+        </client_name>
+        <client_telephone_number> +1 570 894 7676</client_telephone_number>
+        <client_fax_number> +1 570 894 7678 </client_fax_number>
+        <client_address>
+            <client_address_street> 29 Walnut Street</client_address_street>
+            <client_address_city> Wilkes Barre </client_address_city>
+            <client_address_state> PA </client_address_state>
+            <client_address_postal_code> 18702 </client_address_postal_code>
+        </client_address>
+        <client_status> repeat </client_status>
+    </client>
+</client_information>

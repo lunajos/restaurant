@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <!-- Root Element -->
+    <xsd:element name="food_recipes">
+       	<xsd:complexType >
+       		<xsd:sequence>
+       			<xsd:element name="recipe" type="recipeType" minOccurs="0" maxOccurs="unbounded"/>
+       		</xsd:sequence> 		
+   		</xsd:complexType>
+    </xsd:element>
+
+  <!-- Individual Elements (recipe) -->
+    <xsd:complexType name="recipeType" >
+    	<xsd:sequence>
+    		<xsd:element name="recipe_number" type="xsd:integer"/>
+    		<xsd:element name="recipe_name" type="xsd:string"/>
+    		<xsd:element name="recipe_typical_use" type="xsd:string"/>
+    		<xsd:element name="recipe_ingredients" type="recipeIngredientsType" minOccurs="1"/>    		
+    		<xsd:element name="recipe_steps" type="recipeStepsType" minOccurs="1"/>
+    	</xsd:sequence>
+    </xsd:complexType>
+
+    <!-- (Individual Ingridients) -->
+    <xsd:complexType name="recipeIngredientsType">
+    	<xsd:sequence>
+    		<xsd:element name="ingredients" type="xsd:string" maxOccurs="unbounded"/>
+    	</xsd:sequence>	
+    </xsd:complexType>
+
+    <!-- (Individual Steps) -->
+    <xsd:complexType name="recipeStepsType">
+    	<xsd:sequence>
+    		<xsd:element name="steps" type="xsd:string" maxOccurs="unbounded"/>
+    	</xsd:sequence>	
+    </xsd:complexType>
+    
+</xsd:schema>

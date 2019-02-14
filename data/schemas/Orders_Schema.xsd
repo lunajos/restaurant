@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <!-- Root Element -->
+<xsd:element name="clientOrder_Information">
+	<xsd:complexType>
+		<xsd:sequence>
+			<xsd:element name="clientOrder" type="clientType" minOccurs="0" maxOccurs="unbounded">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+
+<xsd:complexType name="clientType">
+	<xsd:sequence>
+		<xsd:element name="client_order_number" type="xsd:integer"/>
+		<xsd:element name="client_order_date" type="xsd:date"/>
+		<xsd:element name="client_number" type="xsd:integer"/>
+		<xsd:element name="total_client_cost" type="xsd:double"/>
+		<xsd:element name="client_order" type="clientOrderType" minOccurs="1" maxOccurs="unbounded"/>
+	</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="clientOrderType">
+	<xsd:sequence>
+		<xsd:element name="recipe_number" type="xsd:integer"/>
+		<xsd:element name="recipe_quantity" type="xsd:integer"/>
+		<xsd:element name="recipe_cost" type="xsd:double"/>
+		<xsd:element name="value_order" type="xsd:double"/>
+	</xsd:sequence>
+</xsd:complexType>
+
+
+</xsd:schema>
