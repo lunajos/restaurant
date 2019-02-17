@@ -1,10 +1,10 @@
 'use strict';
 
 const gulp = require('gulp');
-const imagemin = require('gulp-imagemin');
 const sass = require('gulp-sass');
+const imagemin = require('gulp-imagemin');
 
-
+// Default paths to `src` and `dest`
 const path = {
 	styles: {
 		src: 'src/styles/*.scss',
@@ -24,6 +24,8 @@ const path = {
 	}
 };
 
+// Set Default Compiler
+//sass.compiler = node
 
 // Copy all html files
 gulp.task('copy-html', function(done) {
@@ -45,10 +47,19 @@ gulp.task('copy-js', function(done) {
 // Transpile sass to CSS
 gulp.task('sass', function(done) {
 	gulp.src(path.styles.src)
- 	.pipe(sass())
+ 	.pipe(sass().on('error', sass.logError))
   .pipe(gulp.dest(path.styles.dest));
 
   done();
+});
+
+// Watch sass
+gulp.task('sass:watch', function(done){
+	gulp.watch(path.styles.src , function(){
+		return ['sass'];
+	});
+
+	done();
 });
 
 // Optomize Images

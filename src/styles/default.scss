@@ -1,0 +1,69 @@
+/*Set Mobile Width*/
+$desktop: 2000px;
+$tablet: 750;
+$iphonex:500px;
+$sm-phone: 300px;
+
+/*Set color scheme*/ 
+$colors: (
+	primary: #006596,
+	primary-light: lighten(#006596, 35%),
+
+	secondary:#91afdc,
+	secondary-dark: darken(#91afdc, 20%),
+
+	invert: #ffffff
+);
+@function color($color-name) {
+	@return map-get($colors, $color-name)
+}
+
+// Set Margins
+$margin: (
+	default: 15px,
+	mobile: 10px,
+	body: 25px,
+	center: auto
+);
+@function margin($margin-name){
+	@return map-get($margin, $margin-name)
+}
+
+// Set Padding
+$padding: (
+	default: 15px,
+	mobile: 10px,
+	body: 25px
+);
+@function padding($pad-name){
+	@return map-get($padding, $pad-name)
+}
+
+// Set Button size
+$btn-sz: (
+	small: 75px,
+	medium: 115px,
+	large: 75%
+);
+@function btn-sz($size){
+	@return map-get($btn-sz, $size)
+}
+
+// Set Botton Color
+$btn-col: (
+	pri:color(primary), 
+	sec:color(secondary),
+	ter:#64ab23
+);
+@function btn-col($color){
+	@return map-get($btn-col, $color)
+}
+
+// Set Default Border radius
+$border: (
+	default: 15px
+);
+@function border($size){
+	@return map-get($border, $size)	
+}
+
