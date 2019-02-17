@@ -90,4 +90,33 @@
             <steps>Season to taste with salt and pepper, and gently stir to combine</steps>
         </recipe_steps>
     </recipe>
+    <recipe>
+        <recipe_number>0017</recipe_number>
+        <recipe_name>Grilled Cheese sandwich</recipe_name>
+        <recipe_typical_use> main </recipe_typical_use>
+        <recipe_ingredients>
+            <ingredients> 6 tbs of butter</ingredients>
+            <ingredients> 8 slices of sourdough bread</ingredients>
+            <ingredients> 3 tbs of mayonnaise</ingredients>
+            <ingredients> 3 tbs finely shredded Manchego (or Parmesan Cheese)</ingredients>
+            <ingredients> 1/8 tbs of onion powder</ingredients>
+            <ingredients> 1/2 cup of shredded sharp white cheddar Cheese </ingredients>
+            <ingredients> 1/2 cup of shredded Montereey Jack Cheese </ingredients>
+            <ingredients> 1/2 cup of shredded Gruyere Cheese </ingredients>
+            <ingredients> 4 oz of Brie Cheese, rind removed and sliced </ingredients>        
+        </recipe_ingredients>
+        <recipe_steps>
+            <steps>Spread 3 tbs of butter on one suide of bread clices</steps>
+            <steps>Toast Bread, butter side down, in a skillet over medium heat for 2-3 minutes</steps>
+            <steps>remove bread</steps>
+            <steps>In one bowl, Mix together Mayonnaise, Manchego Cheese and Onion powder.</steps>
+            <steps>In another bowl, Mix together Cheddar, Monterey Jack and Gryere cheese</steps>
+            <steps>place brie cheese on toasted side of bread</steps>
+            <steps>sprinkle cheddar cheese mixture on brie</steps>
+            <steps>Put the other sclice of bread on top with toasted side facing inward</steps>
+            <steps>spread mayo mixture on the outside of each sandwich</steps>
+            <steps>place in skillet and cook untill golden brown for 5-6 minutes</steps>
+            <steps> server immediatly</steps>
+        </recipe_steps>
+    </recipe>
 </food_recipes>

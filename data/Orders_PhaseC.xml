@@ -1,49 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <clientOrder_Information xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./schemas/OrdersSchema.xsd">
     <clientOrder>
-        <client_order_number>0014</client_order_number>
-        <client_order_date>2019-05-05</client_order_date>
-        <client_number>01011</client_number>
-        <total_client_cost>12.97</total_client_cost>
+        <client_order_number>01213</client_order_number>
+        <client_order_date>2018-05-05</client_order_date>
+        <client_number>090012</client_number>
+        <total_client_cost>24.67</total_client_cost>
         <client_order>
-            <recipe_number>1212</recipe_number>
-            <recipe_quantity>3</recipe_quantity>
-            <recipe_cost>3.87</recipe_cost>
-            <value_order>11.61</value_order>
+            <recipe_number>0014</recipe_number>
+            <recipe_quantity>1</recipe_quantity>
+            <recipe_cost>5.32</recipe_cost>
+            <value_order>5.32</value_order>
         </client_order>
         <client_order>
-            <recipe_number>1212</recipe_number>
-            <recipe_quantity>3</recipe_quantity>
-            <recipe_cost>3.87</recipe_cost>
-            <value_order>11.61</value_order>
+            <recipe_number>0015</recipe_number>
+            <recipe_quantity>2</recipe_quantity>
+            <recipe_cost>5.87</recipe_cost>
+            <value_order>11.74</value_order>
         </client_order>
         <client_order>
-            <recipe_number>1212</recipe_number>
-            <recipe_quantity>3</recipe_quantity>
-            <recipe_cost>3.87</recipe_cost>
-            <value_order>11.61</value_order>
-        </client_order>
-    </clientOrder>
-
-    <clientOrder>
-        <client_order_number>0014</client_order_number>
-        <client_order_date>2019-05-05</client_order_date>
-        <client_number>01011</client_number>
-        <total_client_cost>12.97</total_client_cost>
-        <client_order>
-            <recipe_number>1212</recipe_number>
-            <recipe_quantity>3</recipe_quantity>
-            <recipe_cost>3.87</recipe_cost>
-            <value_order>11.61</value_order>
-        </client_order>
-        <client_order>
-            <recipe_number>1212</recipe_number>
-            <recipe_quantity>3</recipe_quantity>
-            <recipe_cost>3.87</recipe_cost>
-            <value_order>11.61</value_order>
-        </client_order>
-        <client_order>
-            <recipe_number>1212</recipe_number>
+            <recipe_number>0016</recipe_number>
             <recipe_quantity>3</recipe_quantity>
             <recipe_cost>3.87</recipe_cost>
             <value_order>11.61</value_order>
@@ -51,27 +26,65 @@
     </clientOrder>
 
     <clientOrder>
-        <client_order_number>0014</client_order_number>
+        <client_order_number>01214</client_order_number>
         <client_order_date>2019-05-05</client_order_date>
-        <client_number>01011</client_number>
+        <client_number>090013</client_number>
         <total_client_cost>12.97</total_client_cost>
         <client_order>
-            <recipe_number>1212</recipe_number>
-            <recipe_quantity>3</recipe_quantity>
+            <recipe_number>0014</recipe_number>
+            <recipe_quantity>1</recipe_quantity>
+            <recipe_cost>5.32</recipe_cost>
+            <value_order>5.32</value_order>
+        </client_order>
+        <client_order>
+            <recipe_number>0015</recipe_number>
+            <recipe_quantity>2</recipe_quantity>
+            <recipe_cost>5.87</recipe_cost>
+            <value_order>11.74</value_order>
+        </client_order>
+    </clientOrder>
+
+    <clientOrder>
+        <client_order_number>01215</client_order_number>
+        <client_order_date>2019-05-05</client_order_date>
+        <client_number>090014</client_number>
+        <total_client_cost>12.97</total_client_cost>
+        <client_order>
+            <recipe_number>0015</recipe_number>
+            <recipe_quantity>2</recipe_quantity>
+            <recipe_cost>5.87</recipe_cost>
+            <value_order>11.74</value_order>
+        </client_order>
+        <client_order>
+            <recipe_number>0016</recipe_number>
+            <recipe_quantity>2</recipe_quantity>
             <recipe_cost>3.87</recipe_cost>
             <value_order>11.61</value_order>
         </client_order>
         <client_order>
-            <recipe_number>1212</recipe_number>
-            <recipe_quantity>3</recipe_quantity>
+            <recipe_number>0017</recipe_number>
+            <recipe_quantity>1</recipe_quantity>
+            <recipe_cost>4.23</recipe_cost>
+            <value_order>4.23</value_order>
+        </client_order>
+    </clientOrder>
+
+    <clientOrder>
+        <client_order_number>01216</client_order_number>
+        <client_order_date>2019-05-05</client_order_date>
+        <client_number>090015</client_number>
+        <total_client_cost>12.97</total_client_cost>
+        <client_order>
+            <recipe_number>0014</recipe_number>
+            <recipe_quantity>1</recipe_quantity>
             <recipe_cost>3.87</recipe_cost>
-            <value_order>11.61</value_order>
+            <value_order>3.87</value_order>
         </client_order>
         <client_order>
-            <recipe_number>1212</recipe_number>
-            <recipe_quantity>3</recipe_quantity>
-            <recipe_cost>3.87</recipe_cost>
-            <value_order>11.61</value_order>
+            <recipe_number>0017</recipe_number>
+            <recipe_quantity>2</recipe_quantity>
+            <recipe_cost>4.23</recipe_cost>
+            <value_order>8.46</value_order>
         </client_order>
     </clientOrder>
 </clientOrder_Information>

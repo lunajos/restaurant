@@ -1,0 +1,16 @@
+{
+  "name": "japan_food",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+		"build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "?"
+  },
+  "author": "Jose L",
+  "license": "ISC"
+}
