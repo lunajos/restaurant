@@ -4,29 +4,67 @@ let xmlhttp;
 let xmlDoc,  content;
 let clientsXML = 'data/Clients_PhaseA.xml';
 let recipesXML = 'data/Recipes_PhaseB.xml';
-let ordersXML = 'data/Orders_PhaseCA.xml';
+let ordersXML = 'data/Orders_PhaseC.xml';
 
-
-
-if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
-	xmlhttp=new XMLHttpRequest();
-}
-else {// code for IE6, IE5
-	xmlhttp=new ActiveXObject('Microsoft.XMLHTTP');
-}
-// Show status of request
-xmlhttp.onreadystatechange = function() {
-	if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {				
-		// get the xml file
-		xmlDoc=xmlhttp.responseXML;
-
-		content = xmlDoc.getElementsByTagName('client');
-		console.log(content);
+// fix paths and root
+let data = {
+	clients: {
+		path: 'data/Clients_PhaseA.xml',
+		root: 'client'
+	},
+	recipes: {
+		path: 'data/Clients_PhaseA.xml',
+		root: 'client'
+	},
+	orders: {
+		path: 'data/Clients_PhaseA.xml',
+		root: 'client'
 	}
 };
-		xmlhttp.open('GET', clientsXML, true);
-		xmlhttp.send();
+
+console.log(data);
+
+loadXML(clientsXML, 'client');
+loadXML(recipesXML, 'recipe');
+loadXML(ordersXML, 'clientOrder');
 
 
-// Testing purposes
-console.log('bar');
+
+
+function loadXML(file, root){
+	if (window.XMLHttpRequest) {				//jshint ignore: line
+		xmlhttp=new XMLHttpRequest(); 		// jshint ignore: line
+	}
+	else {
+		xmlhttp=new ActiveXObject('Microsoft.XMLHTTP'); // jshint ignore: line
+	}
+
+	// Wait until XML is loaded	
+	xmlhttp.onreadystatechange = function() {
+		if (this.readyState === 4 && this.status === 200) {				
+			// get the xml file and pass root
+			showXML(this, root);
+		}
+	};
+
+	xmlhttp.open('GET', file, true);
+	xmlhttp.send();
+}
+
+function showXML(xml, root){
+		let x, i, box;
+		xmlDoc=xml.responseXML;
+
+		content = xmlDoc.getElementsByTagName(root);
+		console.log(content);
+		console.log(content.length);
+
+		for (i = 0; i < content.length; i++) {
+			//box = document.getElementsByClassName('box'); // jshint ignore: line
+			for (x = 0; x < content[i].childNodes.length; x++) {
+				console.log(content[i].childNodes[x].textContent);	
+			}
+		} // end
+}
+
+
