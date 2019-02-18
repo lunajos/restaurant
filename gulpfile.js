@@ -67,7 +67,10 @@ function Imagemin(done) {
 
 // watch files
 gulp.task('watch', function() {
-  gulp.watch('./src/styles/*.scss', gulp.parallel(Sass, Scripts, Html, Imagemin));
+  gulp.watch(path.styles.src, gulp.parallel(Sass));
+  gulp.watch(path.scripts.src, gulp.parallel(Scripts));
+  gulp.watch(path.images.src, gulp.parallel(Imagemin));
+  gulp.watch(path.html.src, gulp.parallel(Html));
 });
 
 // Default Task 
