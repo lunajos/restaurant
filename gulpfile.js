@@ -29,20 +29,33 @@ const path = {
 // Copy all html files
 function Html(done){
 	gulp.task('html', function() {
-		gulp.src(path.html.src)
+		return gulp.src(path.html.src)
 		.pipe(gulp.dest(path.html.dest));
 	});
 	done();
 }
 
+gulp.task('html', function(done) {
+	gulp.src(path.html.src)
+	.pipe(gulp.dest(path.html.dest));
+	
+	done();
+});
 // Copy all Javascript Files
 function Scripts(done) {
 	gulp.task('scripts', function() {
-		gulp.src(path.scripts.src)
+		return gulp.src(path.scripts.src)
 		.pipe(gulp.dest(path.scripts.dest));
 	});
 	done();
 }
+
+gulp.task('scripts', function(done) {
+	gulp.src(path.scripts.src)
+	.pipe(gulp.dest(path.scripts.dest));
+
+	done();
+});
 
 // Transpile sass to CSS
 function Sass(done) {
@@ -58,9 +71,10 @@ function Sass(done) {
 // Optomize Images
 function Imagemin(done) {
 	gulp.task('imagemin', function() {
-		gulp.src(path.images.src)
+		return gulp.src(path.images.src)
 		.pipe(imagemin())
 		.pipe(gulp.dest(path.images.dest));
+		
 	});
 	done();
 }
@@ -68,9 +82,9 @@ function Imagemin(done) {
 // watch files
 gulp.task('watch', function() {
   gulp.watch(path.styles.src, gulp.parallel(Sass));
-  gulp.watch(path.scripts.src, gulp.parallel(Scripts));
+  gulp.watch(path.scripts.src, gulp.parallel('scripts'));
   gulp.watch(path.images.src, gulp.parallel(Imagemin));
-  gulp.watch(path.html.src, gulp.parallel(Html));
+  gulp.watch(path.html.src, gulp.parallel('html'));
 });
 
 // Default Task 
@@ -79,8 +93,8 @@ gulp.task('default', function(done){
 	done();
 });
 
-exports.Sass = sass;
-exports.Scripts = scripts;
-exports.Html = html;
-exports.Imagemin = imagemin;
+exports.sass = sass;
+exports.scripts = scripts;
+exports.html = html;
+exports.imagemin = imagemin;
 

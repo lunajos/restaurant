@@ -1,4 +1,3 @@
-'use strict'; // jshint ignore:line
+'use strict'; 
 
-console.log('this is an alert');
-
+console.log('foo');
