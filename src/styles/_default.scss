@@ -6,11 +6,11 @@ $sm-phone: 300px;
 
 /*Set color scheme*/ 
 $colors: (
-	primary: #006596,
-	primary-light: lighten(#006596, 35%),
+	primary: #d14921,
+	primary-light: lighten(#d14921, 35%),
 
-	secondary:#91afdc,
-	secondary-dark: darken(#91afdc, 20%),
+	secondary:#e9e1cc,
+	secondary-dark: darken(#e9e1cc, 30%),
 
 	invert: #ffffff
 );
@@ -38,6 +38,13 @@ $padding: (
 @function padding($pad-name){
 	@return map-get($padding, $pad-name)
 }
+$pageHeight: (
+	mobile: 500px,
+	desktop: 900px
+);
+@function pageHeight($page-name) {
+	@return map-get($pageHeight, $page-name)
+}
 
 // Set Button size
 $btn-sz: (
@@ -61,7 +68,7 @@ $btn-col: (
 
 // Set Default Border radius
 $border: (
-	default: 15px
+	default: 5px
 );
 @function border($size){
 	@return map-get($border, $size)	

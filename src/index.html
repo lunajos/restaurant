@@ -3,18 +3,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<title>Food</title>
+	<!-- Jquery CDN -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="js/app.js" language="javascript"></script>
-	<link rel="stylesheet" href="styles/main.css" type="text/css" media="screen" charset="utf-8"/>
+	<script src="js/index.js" language="javascript"></script>
+<!--	<link rel="stylesheet" href="styles/main.css" type="text/css" media="screen" charset="utf-8"/> -->
+	<link rel="stylesheet" href="styles/layout.css" type="text/css" media="screen" charset="utf-8"/>
 </head>
 <body>
 	<div id="header"> <p>Customers</p> <p>Orders</p> <p>Reciepes</p> </div>
-	<div id="main-content">
 		<h1>Food Reciepes</h1>
-		<div class="section_1">recipe</div>
-		<div class="section_2">some stuff</div>
-		<div class="section_3">and othee stuff</div>
+	<div id="main-content" class="grid">
+		<div class="span-col- span-row-3 recipes">recipe</div>
+		<div class="span-col- span-row- customers">some stuff</div>
+		<div class="span-col- span-row-4 orders">and othee stuff</div>
 	</div>
 
 	<div id="footer"> <p>this is some footer content</p> </div>
