@@ -5,12 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
-		"build": "gulp"
+    "dev/build": "gulp",
+    "Dev/Build": "gulp watch"
   },
   "repository": {
     "type": "git",
     "url": "?"
   },
   "author": "Jose L",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^3.0.0"
+  }
 }

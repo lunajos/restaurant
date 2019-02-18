@@ -4,6 +4,8 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const imagemin = require('gulp-imagemin');
 
+let scripts, html;
+
 // Default paths to `src` and `dest`
 const path = {
 	styles: {
@@ -24,54 +26,58 @@ const path = {
 	}
 };
 
-// Set Default Compiler
-//sass.compiler = node
-
 // Copy all html files
-gulp.task('copy-html', function(done) {
-	gulp.src(path.html.src)
-	.pipe(gulp.dest(path.html.dest));
-	
+function Html(done){
+	gulp.task('html', function() {
+		gulp.src(path.html.src)
+		.pipe(gulp.dest(path.html.dest));
+	});
 	done();
-});
+}
 
 // Copy all Javascript Files
-gulp.task('copy-js', function(done) {
-	gulp.src(path.scripts.src)
-	.pipe(gulp.dest(path.scripts.dest));
-	
+function Scripts(done) {
+	gulp.task('scripts', function() {
+		gulp.src(path.scripts.src)
+		.pipe(gulp.dest(path.scripts.dest));
+	});
 	done();
-});
-
+}
 
 // Transpile sass to CSS
-gulp.task('sass', function(done) {
-	gulp.src(path.styles.src)
- 	.pipe(sass().on('error', sass.logError))
-  .pipe(gulp.dest(path.styles.dest));
-
-  done();
-});
-
-// Watch sass
-gulp.task('sass:watch', function(done){
-	gulp.watch(path.styles.src , function(){
-		return ['sass'];
+function Sass(done) {
+	gulp.task('sass', function() {
+		return gulp.src(path.styles.src)
+		.pipe(sass().on('error', sass.logError))
+		.pipe(gulp.dest(path.styles.dest));
 	});
-
 	done();
-});
+}
+
 
 // Optomize Images
-gulp.task('imagemin', function(done) {
-	gulp.src(path.images.src)
-	.pipe(imagemin())
-	.pipe(gulp.dest(path.images.dest));
+function Imagemin(done) {
+	gulp.task('imagemin', function() {
+		gulp.src(path.images.src)
+		.pipe(imagemin())
+		.pipe(gulp.dest(path.images.dest));
+	});
 	done();
+}
+
+// watch files
+gulp.task('watch', function() {
+  gulp.watch('./src/styles/*.scss', gulp.parallel(Sass, Scripts, Html, Imagemin));
 });
 
 // Default Task 
 gulp.task('default', function(done){
+	gulp.parallel(Sass, Scripts, Html, Imagemin);
 	done();
-	return ['copy-html', 'copy-js', 'sass', 'imagemin'];
 });
+
+exports.Sass = sass;
+exports.Scripts = scripts;
+exports.Html = html;
+exports.Imagemin = imagemin;
+
