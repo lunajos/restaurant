@@ -66,7 +66,8 @@ function showXML(xml, root){
 		for (i = 0; i < content.length; i++) {
 			for (x = 0; x < content[i].childNodes.length; x++) {
 				 if (content[i].childNodes[x].textContent.length) { // xml content to DOM
-						box[0].innerHTML += content[i].childNodes[x].innerHTML + '<br/>';
+						box[0].innerHTML += content[i].childNodes[x].textContent+ '<br/>';
+						console.log(box[0].innerhtml);
 				 }
 			}
 		} // end
