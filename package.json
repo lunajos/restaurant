@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "?"
+    "url": "ssh://git@github.com:lunajos/restaurant.git"
   },
   "author": "Jose L",
   "license": "ISC",
