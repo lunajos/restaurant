@@ -6,7 +6,7 @@ const imagemin = require('gulp-imagemin');
 //const concat = require('gulp-concat');
 sass.compiler = require('node-sass');
 
-let scripts, html;
+//let scripts, html;
 
 // Default paths to `src` and `dest`
 const path = {
