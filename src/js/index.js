@@ -13,12 +13,12 @@ let data = {
 		root: 'client'
 	},
 	recipes: {
-		path: 'data/Clients_PhaseA.xml',
-		root: 'client'
+		path: 'data/Recipes_PhaseB.xml',
+		root: 'recipe'
 	},
 	orders: {
-		path: 'data/Clients_PhaseA.xml',
-		root: 'client'
+		path: 'data/Orders_PhaseC.xml',
+		root: 'clientOrder'
 	}
 };
 
@@ -30,14 +30,10 @@ loadXML(ordersXML, 'clientOrder');
 
 
 
-
 function loadXML(file, root){
-	if (window.XMLHttpRequest) {				//jshint ignore: line
-		xmlhttp=new XMLHttpRequest(); 		// jshint ignore: line
-	}
-	else {
-		xmlhttp=new ActiveXObject('Microsoft.XMLHTTP'); // jshint ignore: line
-	}
+	window.XMLHttpRequest	 // jshint ignore:line
+	? xmlhttp=new XMLHttpRequest() // jshint ignore:line
+	: xmlhttp=new ActiveXObject('Microsoft.XMLHTTP');// jshint ignore:line
 
 	// Wait until XML is loaded	
 	xmlhttp.onreadystatechange = function() {
@@ -52,13 +48,10 @@ function loadXML(file, root){
 }
 
 function showXML(xml, root){
-		let x, i, box;
-		xmlDoc=xml.responseXML;
+		let x, i, box;					
+		xmlDoc=xml.responseXML;		
 
 		content = xmlDoc.getElementsByTagName(root);
-		console.log(content);
-		console.log(content.length);
-
 	
 		box = document.getElementsByClassName(root); // jshint ignore: line
 		console.log(box);
@@ -66,8 +59,9 @@ function showXML(xml, root){
 		for (i = 0; i < content.length; i++) {
 			for (x = 0; x < content[i].childNodes.length; x++) {
 				 if (content[i].childNodes[x].textContent.length) { // xml content to DOM
-						box[0].innerHTML += content[i].childNodes[x].textContent+ '<br/>';
-						console.log(box[0].innerhtml);
+						box[0].innerText += content[i].childNodes[x].textContent;
+
+						console.log(content[i].childNodes[x].nodeName);
 				 }
 			}
 		} // end
