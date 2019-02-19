@@ -1,5 +1,7 @@
 'use strict';
 
+console.log('az');
+
 let xmlhttp;
 let xmlDoc,  content;
 let clientsXML = 'data/Clients_PhaseA.xml';
@@ -48,20 +50,25 @@ function loadXML(file, root){
 }
 
 function showXML(xml, root){
-		let x, i, box;					
+		let x, i, box, isFirstEl, info;					
 		xmlDoc=xml.responseXML;		
-
+		isFirstEl= true;
 		content = xmlDoc.getElementsByTagName(root);
 	
 		box = document.getElementsByClassName(root); // jshint ignore: line
-		console.log(box);
+		info = document.getElementsByClassName(root+'-info'); // jshint ignore: line
 
 		for (i = 0; i < content.length; i++) {
 			for (x = 0; x < content[i].childNodes.length; x++) {
 				 if (content[i].childNodes[x].textContent.length) { // xml content to DOM
-						box[0].innerText += content[i].childNodes[x].textContent;
-
-						console.log(content[i].childNodes[x].nodeName);
+						if (isFirstEl){
+							box[0].innerText += content[i].childNodes[x].textContent;
+							console.log(box[0]);
+							info[0].innerText += content[i].childNodes[x].tagName; 
+							isFirstEl = false;
+						} else {
+							box[0].innerText += content[i].childNodes[x].textContent;
+						}
 				 }
 			}
 		} // end
