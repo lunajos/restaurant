@@ -59,10 +59,15 @@ function showXML(xml, root){
 		console.log(content);
 		console.log(content.length);
 
+	
+		box = document.getElementsByClassName(root); // jshint ignore: line
+		console.log(box);
+
 		for (i = 0; i < content.length; i++) {
-			//box = document.getElementsByClassName('box'); // jshint ignore: line
 			for (x = 0; x < content[i].childNodes.length; x++) {
-				console.log(content[i].childNodes[x].textContent);	
+				 if (content[i].childNodes[x].textContent.length) { // xml content to DOM
+						box[0].innerHTML += content[i].childNodes[x].innerHTML + '<br/>';
+				 }
 			}
 		} // end
 }
