@@ -3,10 +3,49 @@
 */
 
 [class*="client-"]{
-	background-color: red;
-	min-width: 50px;
-	min-height: 50px;
-	paddding: padding(mobile);
+	background-color: #f6fbfc;
+	padding: padding(mobile);
+	margin: margin(mobile);;
+	color:black;
+	border-radius: border(default);
+	box-shadow: 1px 2px 2px grey;
+	margin-right: margin(center);
+	margin-left: margin(center);
 }
+
+.wrapper{
+	border-radius: border(default);
+	width: 100%;
+	margin-left: margin(center);
+	margin-right: margin(center);
+	background-color:darken(#f6fbfc, 15%);	
+
+}
+
+.wrapper .grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 5px;
+}
+
+.client-name{
+	grid-column: span 3 / auto;
+	width: 90%;
+}
+.client-add{
+	grid-row: span 2 / auto;
+}
+.client-tel{
+
+}
+.client-fax{
+
+}
+.client-info{
+}
+.client-num{
+}
+
+
 
 
