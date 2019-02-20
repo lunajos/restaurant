@@ -11,6 +11,8 @@ The public repo resides at 	`https://github.com/lunajos/restaurant`. This can be
 
 
 ### Build Locally
+To generate Static files:
+
 `npm run dev/build` will build `dist` with files in the `src` directory.
 
 `npm run Dev/Build` will  build `dist` and **watch** for changes in the `src` directory. 
