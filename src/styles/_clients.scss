@@ -1,0 +1,12 @@
+/*
+* Model Clients section
+*/
+
+[class*="client-"]{
+	background-color: red;
+	min-width: 50px;
+	min-height: 50px;
+	paddding: padding(mobile);
+}
+
+
