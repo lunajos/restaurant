@@ -19,13 +19,12 @@
 	margin-left: margin(center);
 	margin-right: margin(center);
 	background-color:darken(#f6fbfc, 15%);	
-
 }
 
-.wrapper .grid {
+.wrapper {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 5px;
+	grid-gap: grid-gap(sm);;
 }
 
 .client-name{
@@ -45,7 +44,4 @@
 }
 .client-num{
 }
-
-
-
 

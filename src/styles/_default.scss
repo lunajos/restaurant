@@ -18,6 +18,17 @@ $colors: (
 	@return map-get($colors, $color-name)
 }
 
+// Set grid gaps
+$grid-gap: (
+	sm: 5px,
+	md: 10px,
+	lg: 15px,
+	xl: 25px
+);
+@function grid-gap($gap){
+	@return map-get($grid-gap, $gap);
+}
+
 // Set Margins
 $margin: (
 	default: 15px,
