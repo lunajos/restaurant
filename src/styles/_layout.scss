@@ -25,9 +25,9 @@
 #main-content{
 	margin-top: margin(default);
 	min-height: pageHeight(mobile);
-	width: 90%;
+	width: 75%;
 	margin: margin(center);
-	text-align: center;
+	text-align: left;
 }
 
 
@@ -40,20 +40,16 @@
 }
 
 
-.grid {
+.grid{
+
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(1, 1fr);
 	grid-gap: 15px;
 }
-.span-row-3{grid-row: span 3 / auto;}
 
-.span-row-2{grid-row: span 2 / auto;}
-
-
-[class*="span-"]{
+.root{
 	margin: 20px;
 	padding: 10px;
-	display: inline-block;
 	background-color: #dcd2b7;
 	border-style: solid #dcd2b7;
 	border-radius: border(default);

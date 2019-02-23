@@ -3,8 +3,8 @@
 let xmlhttp;
 let xmlDoc,  content;
 let clientsXML = 'data/Clients_PhaseA.xml';
-let recipesXML = 'data/Recipes_PhaseB.xml';
-let ordersXML = 'data/Orders_PhaseC.xml';
+let recipesXML = 'data/Recipes_PhaseB.xml'; // jshint ignore:line
+let ordersXML = 'data/Orders_PhaseC.xml'; // jshint ignore:line
 
 // fix paths and root
 let data = {
@@ -25,8 +25,8 @@ let data = {
 console.log(data);
 
 loadXML(clientsXML, 'client');
-loadXML(recipesXML, 'recipe');
-loadXML(ordersXML, 'clientOrder');
+//loadXML(recipesXML, 'recipe');
+//loadXML(ordersXML, 'clientOrder');
 
 
 
@@ -53,15 +53,21 @@ function showXML(xml, root){
 		isFirstEl= true;
 		content = xmlDoc.getElementsByTagName(root);
 	
-		box = document.getElementsByClassName(root); // jshint ignore: line
-		info = document.getElementsByClassName(root+'-info'); // jshint ignore: line
-
 		for (i = 0; i < content.length; i++) {
+			box = document.getElementsByClassName(root); // jshint ignore: line
+			box[0].innerHTML += '<div class="root">';
+			console.log(box[i]);
+
+			info = document.getElementsByClassName('root'); // jshint ignore: line
+			//console.log(box[0].innerHTML += '<div class="' + root + '">' );
+
 			for (x = 0; x < content[i].childNodes.length; x++) {
 				 if (content[i].childNodes[x].textContent.length) { // xml content to DOM
-						box[0].innerText += content[i].childNodes[x].textContent;
+					info[i].innerText += content[i].childNodes[x].textContent;
 				 }
 			}
+
+			info[i].innerHTML += '</div>';
 		} // end
 }
 
