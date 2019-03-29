@@ -5,12 +5,14 @@
 ### Git 
 The public repo resides at 	`https://github.com/lunajos/restaurant`. This can be cloned.
 
-=======
 
 # Automation
 
 
 ### Build Locally
+
+Install Dependencies: `npm install`
+
 To generate Static files:
 
 `npm run dev/build` will build `dist` with files in the `src` directory.
@@ -33,9 +35,8 @@ Common tools for Web Developer:
 - https://coolors.co/app/
 - https://cssgr.id/
 - https://canisue.com/
-- https://
-
-
+- https://bennettfeely.com/clippy/
+- https://gridoverlay.com/
 
 
 
