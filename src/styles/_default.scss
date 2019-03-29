@@ -6,16 +6,27 @@ $sm-phone: 300px;
 
 /*Set color scheme*/ 
 $colors: (
-	primary: #d14921,
-	primary-light: lighten(#d14921, 35%),
+	primary: #C04717,
+	primary-light: lighten(#C04717, 35%),
 
-	secondary:#e9e1cc,
-	secondary-dark: darken(#e9e1cc, 30%),
+	secondary:#822830,
+	secondary-dark: darken(#822830, 30%),
 
 	invert: #ffffff
 );
 @function color($color-name) {
 	@return map-get($colors, $color-name)
+}
+
+// Set grid gaps
+$grid-gap: (
+	sm: 5px,
+	md: 10px,
+	lg: 15px,
+	xl: 25px
+);
+@function grid-gap($gap){
+	@return map-get($grid-gap, $gap);
 }
 
 // Set Margins
